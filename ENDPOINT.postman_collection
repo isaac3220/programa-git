@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "58a37607-77a5-4132-9e7c-670cd3aca581",
+		"name": "evidencia ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44261228"
+	},
+	"item": [
+		{
+			"name": "http://localhost/proyecto_api/login.php",
+			"request": {
+				"auth": {
+					"type": "inherit"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "usuario",
+							"value": "isaac",
+							"type": "text"
+						},
+						{
+							"key": "contrasena",
+							"value": "cantillo",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/proyecto_api/login.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"proyecto_api",
+						"login.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost/proyecto_api/registrar.php",
+			"request": {
+				"auth": {
+					"type": "inherit"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "usuario",
+							"value": "pepe",
+							"type": "text"
+						},
+						{
+							"key": "contrasena",
+							"value": "perez",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/proyecto_api/registrar.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"proyecto_api",
+						"registrar.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
