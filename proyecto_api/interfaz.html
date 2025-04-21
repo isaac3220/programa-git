@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro e Inicio de Sesión</title>
+</head>
+<body>
+  <div class="pepe1">  
+    <h2>Formulario de Registro</h2>
+    <form action="registrar.php" method="POST" >
+        <label>Usuario:</label><br>
+        <input type="text" name="usuario" required><br>
+        <label>Contraseña:</label><br>
+        <input type="password" name="contrasena" required><br><br>
+        <input type="submit" value="Registrarse">
+    </form>
+</div>
+    <hr>
+
+   <div class="pepe">
+    <h2>Formulario de Inicio de Sesión</h2>
+    <form action="login.php" method="POST">
+        <label>Usuario:</label><br>
+        <input type="text" name="usuario" required><br>
+        <label>Contraseña:</label><br>
+        <input type="password" name="contrasena" required><br><br>
+        <input type="submit" value="Iniciar Sesión">
+    </form>
+   </div>
+</body>
+<style>
+    h2{
+        position: relative;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    form{
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .pepe{
+        position: relative;
+        width: 200px;
+        padding: 50px;
+        background-color: rgb(104, 84, 222);
+        left: 480px;
+        border-radius: 15px;
+        box-shadow: 0px 10px 14px rgb(217, 99, 15);
+    }
+    input{
+        border: none;
+        border-radius: 10px;
+        padding: 7px;
+    }
+    .pepe1{
+        position: relative;
+        width: 200px;
+        padding: 50px;
+        background-color: rgb(104, 84, 222);
+        left: 480px;
+        border-radius: 15px;
+        box-shadow: 0px 10px 14px rgb(217, 99, 15);
+    }
+    
+
+</style>
+</html>
