@@ -1,0 +1,98 @@
+body{
+    font-family: sans-serif;
+    background-image: url(/IMAGE/fondo.jpeg);
+    background-size: cover;
+}
+.div{
+    position: relative;
+    text-align: center;
+    color: azure;
+    padding: 10px;
+    width: 1228px;
+    border-radius: 20px;
+    background-color: blue;
+}
+.h1{
+    font-size: medium;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.lo{
+    position: absolute;
+    width: 60px;
+    border-radius: 10px;
+    left: 1090px;
+    bottom: 20px;
+}
+.catalog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 3rem;
+    
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(249, 249, 249, 0.941);
+    text-align: center;
+    padding: 1rem;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px rgb(2, 31, 56), 0 0 20px rgb(61, 166, 205), 0 0 30px rgb(26, 48, 247);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.catalog-container a{
+    text-decoration: none;
+    color: #333;
+
+}
+
+.cotizacion{
+    position: relative;
+    background-color: #ffffff;
+    border: 1 px solid #fff;
+    border-radius: 10px;
+    height: 250px;
+    width: 750px;
+    top: 21px;
+    left: 50px;
+    transition: 0,3s;
+   }
+   .cotizacion:hover{
+       transform: translateY(-5px); 
+       box-shadow: 0 0 10px rgb(2, 31, 56), 0 0 20px rgb(26, 48, 247), 0 0 30px rgb(61, 166, 205);
+       
+   }
+   .isaac{
+    position: absolute;
+    left: 903px;
+    bottom: 370px;
+    color: rgb(251, 251, 251);
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   }
+   .logo2{
+    position: absolute;
+    width: 100px;
+    background-size: cover;
+    left: 1000px;
+    top: 200px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgb(5, 6, 14);;
+   }
+   .cotizacion, h3{
+    position: relative;
+    text-align: center;
+    padding: 5px;
+   }
+   

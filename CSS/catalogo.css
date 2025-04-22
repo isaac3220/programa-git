@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #301dd4;
+    line-height: 1.6;
+    background-image: url(/IMAGE/fondo.jpeg);
+    background-size: cover;
+}
+.logo-container{
+     position: absolute;
+     left: 1170px;
+     
+}
+.logo1{
+    position: relative;
+    width: 60px;
+    bottom: 60px;
+    border-radius: 10px;
+    border-color: #6c0977;
+}
+header {
+    background-color: #1028e3;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.catalog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 23px;
+    padding: 2rem;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(249, 249, 249, 0.941);
+    text-align: center;
+    padding: 1rem;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px rgb(2, 31, 56), 0 0 20px rgb(61, 166, 205), 0 0 30px rgb(26, 48, 247);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.price {
+    color: #0e0d0dd6;
+    font-size: 1.0rem;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 5px 5px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 25px;
+}
+.catalog-container a{
+    text-decoration: none;
+    color: #333;
+}
+A:hover { color: black; font-family: arial; text-decoration: none }
+.input-wrapper {
+    position: absolute;
+    width: 271px;
+    bottom: 510px;
+    box-shadow: 0 0 10px rgba(249, 249, 249, 0.941);
+  }
+  
+  .input {
+    box-sizing: border-box;
+    color: #191919;
+    padding: 15px 15px 15px 35px;
+    width: 100%;
+  }
+  
+  .input.password {
+    padding: 15px 35px 15px 15px;
+  }
+  
+  .input-icon {
+    color: #191919;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .input-icon.password {
+    left: unset;
+    right: 12px;
+    
+  }
+.return{
+    position: absolute;
+    width: 30px;
+    bottom: 20px;
+    left: 40px;
+}
+.rt{
+    position: absolute;
+    bottom: 12px;
+    right: 1140px;
+    color: #000;
+}
+
+.cotizacion{
+ background-color: #ffffff;
+ border: 1 px solid #fff;
+ border-radius: 10px;
+ padding: rem;
+ height: 250px;
+ width: 750px;
+ transition: 0,3s;
+ 
+}
+.cotizacion:hover{
+    transform: translateY(-5px); 
+    box-shadow: 0 0 10px rgb(2, 31, 56), 0 0 20px rgb(26, 48, 247), 0 0 30px rgb(61, 166, 205);
+    
+}

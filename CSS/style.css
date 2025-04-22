@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(/IMAGE/fondo.jpeg);
+    background-size: cover;
+}
+.login-container{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgb(36, 202, 61);
+    width: 300px;
+    text-align: center;
+    transform: scale(0.8);
+    animation: bounceIn 1s ease-out forwards;
+    transition: box-shadow 0.3s ease ;
+}
+.login-container:hover{
+    box-shadow: 0 4px 10px rgb(red, green, blue);
+}
+h2{
+    margin-bottom: 30px;
+    text-align: center;
+}
+label{
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+input{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(110, 26, 26);
+    transition: 0.3;
+}
+input:focus{
+    border-color: black;
+    outline: none;
+}
+.error{
+    display: none;
+}
+button{
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(220, 236, 236);
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(141, 136, 128);
+    box-shadow: 5px 10px 18px rgb(36, 202, 61);
+}
+.btn{
+    margin-top: 10px;
+}
+.logo{
+    position: relative;
+    bottom: 200px;
+    right: 450px;
+}
+p{
+    position: relative;
+    left: 100px;
+    bottom: 70px;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: cursive; 
+    filter: drop-shadow(0 4px 10px rgb(101, 8, 251));
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #e44588, #ff758c, #ff7eb3);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: moveGradient 3s infinite linear;
+}
+img{
+    border: none;
+    border-radius: 10px;
+}
+.footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
+    background-color: rgb(43, 39, 39);
+    color: white;
+    width: 100%;
+  }
+.a{
+    text-align: center;
+    position: relative;
+    padding: 15px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: rgb(124, 176, 176);
+    bottom: 230px;
+    left: 440px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgb(101, 8, 251);
+}
+.a:hover{
+    background-color: aquamarine;
+    box-shadow: 0 4px 10px rgb(141, 136, 128);
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+  }
+  @keyframes moveGradient{
+    0% {
+        background-position: 0% 50%;
+      }
+      
+    100% {
+        background-position: 100% 50%;
+      }
+  }
