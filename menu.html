@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GLASS SPREES</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+    
+      display: flex;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .sidebar {
+      background-image: url(../src/IMAGE/fondo.jpeg);
+      background-size: cover;
+      width: 280px;
+      background-color: #0080ff;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 20px ;
+    }
+
+    .logo {
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-bottom: 50px;
+    }
+
+    .logo img {
+      position: relative;
+      top: 30px;
+      width: 60px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+    }
+
+    nav {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding-left: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      padding: 10px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    nav a:hover, nav a.active {
+      background-color: #005fc1;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 0 20px;
+    }
+
+    .buttons button {
+      background-color: white;
+      color: #0080ff;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .buttons button:hover {
+      background-color: #e0e0e0;
+    }
+
+    main {
+      flex: 1;
+      overflow-y: auto;
+      background-color: #f4f4f4;
+      padding: 40px;
+    }
+
+    .section {
+      display: none;
+    }
+
+    .section.active {
+      display: block;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      color: #666;
+    }
+
+    /* === Catálogo === */
+    .catalog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 20px;
+      margin: 30px 0;
+    }
+
+    .product-card {
+      background-color: #1a1a1a;
+      color: white;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-image {
+      background-color: white;
+      clip-path: circle(50% at 50% 50%);
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      margin-bottom: 15px;
+    }
+
+    .product-image img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    .product-title {
+      font-weight: bold;
+      font-size: 16px;
+      margin-top: 5px;
+    }
+
+    .view-all {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: 1px solid black;
+      background-color: white;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .view-all:hover {
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <aside class="sidebar">
+    <div>
+      <div class="logo">
+        <img src="../src/IMAGE/logo_menu.png" alt="Logo">
+        GLASS SPREES
+      </div>
+      <nav>
+        <a href="#catalogo" class="active">Catálogo</a>
+        <a href="#servicios">Servicios</a>
+        
+        <a href="#contacto">Contacto</a>
+        <a href="#nosotros">Nosotros</a>
+      </nav>
+    </div>
+    <div class="buttons">
+      <button onclick="window.location.href='../iniciodesesion.html'">Iniciar Sesión</button>
+      <button onclick="window.location.href='../registrarse.html'">Registrarse</button>
+    </div>
+  </aside>
+
+  <main>
+    <section class="section active" id="catalogo">
+      <h1>Catálogo</h1>
+      <p>Explora nuestra variedad de productos de vidrio, aluminio y accesorios modernos para hogares y oficinas.</p>
+
+      <div class="catalog-grid">
+        <div class="product-card">
+          <div class="product-image">
+            <img src="../src/IMAGE/division(1).jpeg" alt="Esfero Berlín">
+          </div>
+          <div class="product-title">divisiones de baños</div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="../src/IMAGE/puertas3(1).jpeg" alt="Esfero Escocia">
+          </div>
+          <div class="product-title">puertas ventanas</div>
+        </div>
+        <div class="product-card">
+          <div class="product-image">
+            <img src="../src/IMAGE/instalacion.jpeg" alt="Esfero Cairo">
+          </div>
+          <div class="product-title">servicios de instalación</div>
+        </div>
+      </div>
+
+      <button class="view-all" onclick="window.location.href='../catalogo.html'">Ver todo</button>
+    </section>
+
+    <section class="section" id="servicios">
+      <h1>Servicios</h1>
+      <p>[Contenido de ejemplo sobre los servicios]</p>
+    </section>
+
+    
+
+    <section class="section" id="contacto">
+      <h1>Contacto</h1>
+      <ul>
+        <li>📍 Dirección: Calle 123 #45-67</li>
+        <li>📞 Tel: 312 345 6789</li>
+        <li>📧 contacto@glasssprees.com</li>
+      </ul>
+    </section>
+
+    <section class="section" id="nosotros">
+      <h1>Nosotros</h1>
+      <p>nuestra compañia busca brindar soluciones innovadoras y personalizadas en marquetería, ofreciendo productos de alta calidad en madera, aluminio y vidrio que embellecen y optimizan los espacios de nuestros clientes. Nos comprometemos con la excelencia, la puntualidad y el respeto por el diseño, utilizando materiales sostenibles y tecnología de vanguardia</p>
+    </section>
+
+    <footer>
+      &copy; 2025 GLASS SPREES. Todos los derechos reservados.
+    </footer>
+  </main>
+
+  <script>
+    const navLinks = document.querySelectorAll("nav a");
+    const sections = document.querySelectorAll(".section");
+    const mensjae  = document.querySelectorAll(".view-all")
+
+    navLinks.forEach(link => {
+      link.addEventListener("click", function(e) {
+        e.preventDefault();
+        navLinks.forEach(l => l.classList.remove("active"));
+        this.classList.add("active");
+
+        sections.forEach(s => s.classList.remove("active"));
+        const target = document.querySelector(this.getAttribute("href"));
+        target.classList.add("active");
+      });
+    });
+   
+  </script>
+</body>
+</html>

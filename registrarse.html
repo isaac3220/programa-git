@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Clientes</title>
+    <link rel="stylesheet" href="src/styles/registro.css">
+    <script src="public/js/registro.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-content">
+            <h1 id="title">Registro de Clientes</h1>
+             <button class="login" onclick="window.location.href='/iniciodesesion.html'">Iniciar Sesión</button>
+            <form id="registroForm" method="post">
+                <div class="input-group">
+                    <div class="buttons">
+                        <button class="registro" type="button" id="btnRegistro">Registrarse</button>
+                       
+                    </div>
+                    
+                    <div class="input-field">
+                        <label for="register-name">Ingresa tu nombre</label>
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Nombre completo" id="register-name"> 
+                    </div>
+
+                    <div class="input-field">
+                        <label for="register-email">Ingresa tu correo electrónico</label>
+                        <i class="fa fa-envelope"></i>
+                        <input type="email" placeholder="ejemplo@gmail.com" id="register-email">
+                    </div>
+                    
+                    <div class="input-field">
+                        <label for="register-password">Ingresa una contraseña</label>
+                        <i class="fa-solid fa-key"></i>
+                        <input type="password" placeholder="Máximo 8 caracteres" id="register-password">
+                    </div>
+
+                    <div class="input-field">
+                        <label for="register-age">Ingresa tu edad</label>
+                        <input type="number" placeholder="Ingresa tu edad" id="register-age">
+                    </div>
+                </div> 
+            </form>
+        </div>
+    </div>
+
+    <div class="titulo-glass"> 
+        <h2>Glass Spress</h2>
+    </div>
+
+    <div class="logo-container">
+        <a href="/IMAGE/logo_menu.png"><img src="src/IMAGE/logo_menu.png" alt="Logo" class="logo-menu"></a>
+    </div>
+
+    <div class="menu-container">
+        <a href="/menu.html"><button class="menu">Menú</button></a>
+    </div>
+
+    <footer>
+        <footer class="footer">
+            &copy; 2025 glass spress. Todos los derechos reservados.
+          </footer>
+    </footer>
+</body>
+</html>

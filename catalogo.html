@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Productos</title>
+  <link rel="stylesheet" href="src/styles/catalogo.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="src/IMAGE/logo_menu.png" class="logo1" alt="Logo de la empresa">
+    </div>
+    <h1>Catálogo de Productos</h1>
+
+    
+    <div class="search-section">
+      <form class="search-form">
+        <input type="search" name="nombre" class="input" placeholder="Buscar por nombre...">
+        <select name="categoria" class="input">
+          <option value="">Todas las categorías</option>
+          <option value="acrilicos">Acrílicos</option>
+          <option value="puertas">Puertas y Ventanas</option>
+          <option value="logistica">Logística e Instalación</option>
+          <option value="divisiones">Divisiones de Baño</option>
+        </select>
+        <button type="submit" class="search-button">Buscar</button>
+      </form>
+    </div>
+  </header>
+
+  <div class="catalog-container">
+
+  
+    <div class="product-card">
+      <a href="#">
+        <img src="src/IMAGE/login.jpeg" alt="Láminas de acrílico">
+        <h2>Acrílicos</h2>
+        <p>Más información sobre nuestros acrílicos aquí.</p>
+      </a>
+    </div>
+
+    
+    <div class="product-card">
+      <a href="#">
+        <img src="src/IMAGE/puertas3(1).jpeg" alt="Puertas de aluminio">
+        <h2>Puertas y Ventanas</h2>
+        <p>Conozca nuestra sección de ventanas y puertas.</p>
+      </a>
+    </div>
+
+    
+    <div class="product-card">
+      <a href="#">
+        <img src="src/IMAGE/instalacion.jpeg" alt="Servicio de instalación">
+        <h2>Servicio de Logística e Instalación</h2>
+        <p>Conozca nuestro servicio de transporte e instalación de productos.</p>
+      </a>
+    </div>
+
+   
+    <div class="product-card">
+      <a href="#">
+        <img src="src/IMAGE/division(1).jpeg" alt="Divisiones de baño">
+        <h2>Divisiones de Baño</h2>
+        <p>Consulte nuestro catálogo completo aquí.</p>
+      </a>
+    </div>
+
+  <div>
+    <video class="product-video" autoplay muted loop>
+      <source src="videos/WhatsApp Video 2025-05-28 at 5.42.12 PM.mp4" type="video/mp4">
+      Tu navegador no soporta video HTML5.
+    </video>
+</div>
+
+
+ 
+  <!-- Sección de cotización -->
+ <section class="cotizacion-section" id="coti">
+  <h2>Solicita una cotización</h2>
+  <form id="form-cotizacion">
+    <label for="nombre">Tu nombre:</label>
+    <input type="text" name="nombre" required>
+
+    <label for="correo">Correo electrónico:</label>
+    <input type="email" name="correo" required>
+
+    <label for="producto">Producto a cotizar:</label>
+    <input type="text" name="producto" required>
+
+    <label for="detalles">Detalles o medidas:</label>
+    <textarea name="detalles" rows="4" required></textarea>
+
+    <button type="submit">Enviar cotización</button>
+  </form>
+</section>
+
+  <footer>
+    <p>&copy; 2025 GLASS SPRESS. Todos los derechos reservados.</p>
+  </footer>
+  
+  <script src="public/js/subirProducto.js"></script>
+</body>
+</html>
